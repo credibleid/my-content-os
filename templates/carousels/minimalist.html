@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Authority Template (Dan Koe / Justin Welsh Style)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-cream: #F5F2EB;
+      --text-dark: #121316;
+      --text-muted: #575962;
+      --card-bg: rgba(255, 255, 255, 0.65);
+      --card-border: rgba(18, 19, 22, 0.12);
+      --accent-charcoal: #181A20;
+      --accent-highlight: #EAE5D9;
+      --font-serif: 'Newsreader', serif;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #E2DDD3;
+      color: var(--text-dark);
+      font-family: var(--font-sans);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 60px;
+    }
+
+    .slide-canvas {
+      width: 1080px;
+      height: 1350px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 88px 84px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      background-color: var(--bg-cream);
+    }
+
+    .bg-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('assets/textures/bg_minimal_auth.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.28;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .header-bar {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid var(--card-border);
+      padding-bottom: 24px;
+    }
+
+    .category-tag {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .slide-index {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    .footer-bar {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1.5px solid var(--card-border);
+      padding-top: 24px;
+    }
+
+    .author-block {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .avatar-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--text-dark);
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .author-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .footer-action {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* Minimalist Highlight Pill */
+    .hl-pill {
+      background: #E5DFC5;
+      padding: 0 10px;
+      border-radius: 4px;
+      font-style: italic;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== MINIMALIST SLIDE 1: COVER ==================== -->
+  <div class="slide-canvas" id="min-slide-1">
+    <div class="bg-layer"></div>
+
+    <div class="header-bar">
+      <span class="category-tag">DEEP WORK &bull; PRINCIPLES</span>
+      <span class="slide-index">01 / 07</span>
+    </div>
+
+    <div style="position: relative; z-index: 2; display: flex; flex-direction: column; gap: 36px; margin: auto 0;">
+      <span style="font-size: 18px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted);">ESSAY #42</span>
+      <h1 style="font-family: var(--font-sans); font-size: 76px; line-height: 1.08; font-weight: 800; letter-spacing: -0.03em; color: var(--text-dark);">
+        How to Build a <span class="hl-pill">One-Person</span> Media Empire in 2 Hours a Day.
+      </h1>
+      <p style="font-family: var(--font-serif); font-size: 34px; line-height: 1.4; color: var(--text-muted); font-style: italic; max-width: 880px;">
+        "You don't need a 20-person agency. You need clear thinking, ruthless elimination, and autonomous code loops."
+      </p>
+    </div>
+
+    <div class="footer-bar">
+      <div class="author-block">
+        <div class="avatar-circle">BB</div>
+        <span class="author-name">Bang Ben</span>
+      </div>
+      <span class="footer-action">Swipe to read &rarr;</span>
+    </div>
+  </div>
+
+  <!-- ==================== MINIMALIST SLIDE 2: CARD ESSAY ==================== -->
+  <div class="slide-canvas" id="min-slide-2">
+    <div class="bg-layer"></div>
+
+    <div class="header-bar">
+      <span class="category-tag">RULE 01: ASYMMETRY</span>
+      <span class="slide-index">02 / 07</span>
+    </div>
+
+    <div style="position: relative; z-index: 2; display: flex; flex-direction: column; gap: 32px; margin: auto 0;">
+      <span style="font-family: var(--font-serif); font-size: 64px; font-weight: 600; color: var(--text-dark);">01.</span>
+      <h2 style="font-size: 52px; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em;">
+        Stop Trading Hours for Artifacts
+      </h2>
+      <div style="background: var(--card-bg); backdrop-filter: blur(12px); border: 1.5px solid var(--card-border); border-radius: 20px; padding: 48px; display: flex; flex-direction: column; gap: 24px;">
+        <p style="font-size: 28px; line-height: 1.55; color: var(--text-dark);">
+          The amateur spends 3 hours aligning shapes on a slide canvas. The professional writes the algorithm once, defines the constraints, and lets headless Chromium render the output.
+        </p>
+        <p style="font-family: var(--font-serif); font-size: 26px; line-height: 1.5; color: var(--text-muted); font-style: italic; border-left: 3px solid var(--text-dark); padding-left: 20px;">
+          Leverage is the highest return on energy expended.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div class="author-block">
+        <div class="avatar-circle">BB</div>
+        <span class="author-name">Bang Ben</span>
+      </div>
+      <span class="footer-action">02 / 07 &bull; Next &rarr;</span>
+    </div>
+  </div>
+
+</body>
+</html>

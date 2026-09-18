@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Framework & Breakdown Template (Infographic / Tech Blueprint)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-blueprint: #060B14;
+      --cyan-bright: #00F2FE;
+      --cyan-glow: rgba(0, 242, 254, 0.15);
+      --card-blueprint: rgba(10, 20, 38, 0.78);
+      --card-border: rgba(0, 242, 254, 0.25);
+      --text-white: #FFFFFF;
+      --text-muted: #8EA1B9;
+      --font-mono: 'JetBrains Mono', monospace;
+      --font-sans: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #03060C;
+      color: var(--text-white);
+      font-family: var(--font-sans);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 60px;
+    }
+
+    .slide-canvas {
+      width: 1080px;
+      height: 1350px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 84px 80px;
+      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.95);
+      background-color: var(--bg-blueprint);
+    }
+
+    .bg-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('assets/textures/bg_tech_grid.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.45;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .overlay-grid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at top right, rgba(0, 242, 254, 0.08) 0%, transparent 60%),
+                  linear-gradient(180deg, rgba(6, 11, 20, 0.85) 0%, rgba(6, 11, 20, 0.96) 100%);
+      z-index: 2;
+    }
+
+    .blueprint-header {
+      position: relative;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 22px;
+    }
+
+    .badge-mono {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      letter-spacing: 0.15em;
+      color: var(--cyan-bright);
+      background: rgba(0, 242, 254, 0.08);
+      border: 1px solid var(--card-border);
+      padding: 6px 14px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .blueprint-footer {
+      position: relative;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--card-border);
+      padding-top: 24px;
+      font-family: var(--font-mono);
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+
+    /* Comparison & Step-by-Step Card Grid */
+    .step-card {
+      background: var(--card-blueprint);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 36px 40px;
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .step-num-box {
+      font-family: var(--font-mono);
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--bg-blueprint);
+      background: var(--cyan-bright);
+      padding: 6px 16px;
+      border-radius: 8px;
+      line-height: 1.2;
+    }
+
+    .hl-cyan {
+      color: var(--cyan-bright);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== FRAMEWORK SLIDE 1: COVER ==================== -->
+  <div class="slide-canvas" id="frame-slide-1">
+    <div class="bg-layer"></div>
+    <div class="overlay-grid"></div>
+
+    <div class="blueprint-header">
+      <div class="badge-mono">SYS.ARCH // v2.6</div>
+      <div class="badge-mono">01 / 07</div>
+    </div>
+
+    <div style="position: relative; z-index: 3; display: flex; flex-direction: column; gap: 32px; margin: auto 0;">
+      <div style="font-family: var(--font-mono); font-size: 18px; color: var(--cyan-bright); letter-spacing: 0.1em;">
+        // WORKFLOW DECONSTRUCTION
+      </div>
+      <h1 style="font-size: 76px; line-height: 1.08; font-weight: 800; letter-spacing: -0.02em;">
+        The 3-Tier Autonomous <span class="hl-cyan">Content Engine</span> Pipeline.
+      </h1>
+      <p style="font-size: 28px; line-height: 1.5; color: var(--text-muted); max-width: 880px;">
+        Architectural blueprint: Ingesting raw audio/text dumps directly into deterministic, publication-ready multi-slide carousels.
+      </p>
+    </div>
+
+    <div class="blueprint-footer">
+      <span>DEV_ID: @bangben.sys</span>
+      <span style="color: var(--cyan-bright);">SWIPE_TO_INSPECT &rarr;</span>
+    </div>
+  </div>
+
+  <!-- ==================== FRAMEWORK SLIDE 2: 3-TIER ARCHITECTURE CARD ==================== -->
+  <div class="slide-canvas" id="frame-slide-2">
+    <div class="bg-layer"></div>
+    <div class="overlay-grid"></div>
+
+    <div class="blueprint-header">
+      <div class="badge-mono">EXECUTION_FLOW</div>
+      <div class="badge-mono">02 / 07</div>
+    </div>
+
+    <div style="position: relative; z-index: 3; display: flex; flex-direction: column; gap: 28px; margin: auto 0;">
+      <h2 style="font-size: 50px; font-weight: 800; line-height: 1.15;">
+        Pipeline Breakdown: <span class="hl-cyan">3 Core Layers</span>
+      </h2>
+
+      <!-- Card 1 -->
+      <div class="step-card">
+        <div class="step-num-box">01</div>
+        <div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;">Schema Extraction</h3>
+          <p style="font-size: 20px; line-height: 1.45; color: var(--text-muted);">LLM memecah topik mentah menjadi JSON contract berisi hook, bullet point, dan prompt image asset.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="step-card">
+        <div class="step-num-box">02</div>
+        <div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;">Asset Assembly</h3>
+          <p style="font-size: 20px; line-height: 1.45; color: var(--text-muted);">Injeksi mockup PNG produk lokal + dynamic CSS clamp typography agar tidak terjadi text overflow.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="step-card">
+        <div class="step-num-box">03</div>
+        <div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #FFFFFF; margin-bottom: 6px;">Headless Chromium Snapshot</h3>
+          <p style="font-size: 20px; line-height: 1.45; color: var(--text-muted);">Playwright merender kanvas 1080x1350 pada 2x DPR untuk menghasilkan gambar 2160x2700 ultra-crisp.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="blueprint-footer">
+      <span>STATUS: ACTIVE_NODE</span>
+      <span style="color: var(--cyan-bright);">02 / 07 &bull; NEXT &rarr;</span>
+    </div>
+  </div>
+
+</body>
+</html>
