@@ -1,0 +1,99 @@
+{
+  "brand": {
+    "name": "MGT INDONESIA",
+    "issue": "PRACTICAL HOME SOLUTIONS • 2026",
+    "author": "MGT Indonesia • @mgt.indonesia",
+    "colors": {
+      "primary": "#E2BF84",
+      "primary_light": "#F7DFB0",
+      "background": "#030406",
+      "surface": "#0A0D14",
+      "accent": "#FFFFFF",
+      "muted": "rgba(255, 255, 255, 0.72)"
+    }
+  },
+  "slides": [
+    {
+      "slide_no": "01 / 07",
+      "pill": "Home Solution Dossier",
+      "title_prefix": "Kenapa Paket Lu",
+      "title_accent": "Sering Nyasar",
+      "title_suffix": "& Gagal Diantar?",
+      "description": "Bukan salah kurir, tapi pagar depan yang hening. Ini alasan kenapa rumah modern butuh sistem panggil wireless tahan cuaca.",
+      "footer_tag": "MGT Indonesia • Smart Living",
+      "swipe_text": "Bongkar Masalahnya →"
+    },
+    {
+      "slide_no": "02 / 07",
+      "pill": "Part 01: The Daily Friction",
+      "title_prefix": "Drama",
+      "title_accent": "Kurir Teriak",
+      "title_suffix": "di Pagar Depan.",
+      "description": "Lu lagi di kamar lantai 2 atau dapur belakang. Kurir cuma teriak 2 kali, gak ada jawaban, langsung tancap gas bawa paket lu balik ke gudang.",
+      "quote": "Beli barang online cepat dalam 1 hari, tapi tertunda 3 hari cuma gara-gara bel rumah mati atau gak kedengaran.",
+      "footer_tag": "MGT Indonesia • Pain Points",
+      "swipe_text": "Akar Masalahnya →"
+    },
+    {
+      "slide_no": "03 / 07",
+      "pill": "Part 02: Analysis",
+      "title_prefix": "Pemisahan Total:",
+      "title_accent_1": "Brain",
+      "title_middle": "vs",
+      "title_accent_2": "Body.",
+      "item_1_num": "I.",
+      "item_1_title": "Korsleting Pasca Hujan",
+      "item_1_desc": "Tombol bel biasa tanpa rating waterproof langsung konslet dan mati begitu kena tempias hujan deras cuaca tropis.",
+      "item_2_num": "II.",
+      "item_2_title": "Biaya & Repot Tarik Kabel",
+      "item_2_desc": "Bobok tembok, beli kabel 20 meter, dan panggil tukang listrik. Biaya instalasi lebih mahal dari harga belnya sendiri.",
+      "footer_tag": "MGT Indonesia • Comparison",
+      "swipe_text": "Perbandingannya →"
+    },
+    {
+      "slide_no": "04 / 07",
+      "pill": "Part 03: Contrast",
+      "title_prefix": "Solusi Tradisional vs",
+      "title_accent": "Standard MGT.",
+      "old_label": "METODE LAMA",
+      "old_stat": "Bobok Tembok & Rumit",
+      "old_desc": "Kabel rawan putus, tombol kena air langsung konslet, volume pelan gak tembus lantai dua.",
+      "new_label": "STANDAR MGT",
+      "new_stat": "Pasang 3 Menit",
+      "new_desc": "Tanpa kabel, rating waterproof IP44, jangkauan 150 meter tembus 3 dinding beton.",
+      "footer_tag": "MGT Indonesia • Standard",
+      "swipe_text": "Prinsip Kerja →"
+    },
+    {
+      "slide_no": "05 / 07",
+      "pill": "Part 04: Engineering",
+      "quote_headline": "Teknologi rumah praktis itu tidak harus mahal, tapi wajib reliable dalam segala cuaca.",
+      "quote_sub": "Receiver colok PLN hemat daya + remote transmitter baterai tahan 1 tahun. Pasang sekali, tenang bertahun-tahun.",
+      "footer_tag": "MGT Indonesia • Reliability",
+      "swipe_text": "Lihat Solusinya →"
+    },
+    {
+      "slide_no": "06 / 07",
+      "pill": "Product Spotlight",
+      "title_prefix": "Bel Wireless",
+      "title_accent": "Waterproof MGT.",
+      "description": "Solusi cerdas bel rumah tanpa kabel: jangkauan 150m, 38 pilihan nada dering, dan tahan guyuran hujan deras.",
+      "product_image": "assets/products/bel_doorbell.jpg",
+      "feature_badge": "GARANSI RESMI MGT",
+      "feature_text": "IP44 Waterproof • Plug & Play PLN • 85 dB Loud",
+      "footer_tag": "MGT Indonesia • Tokopedia",
+      "swipe_text": "Cara Order →"
+    },
+    {
+      "slide_no": "07 / 07",
+      "pill": "Upgrade Rumah Lu",
+      "title_prefix": "Amankan Rumah &",
+      "title_accent": "Paket Belanjaan Lu.",
+      "description": "Tersedia resmi di Tokopedia MGT Indonesia dengan pengiriman cepat dari Bandung. Klik link di bio atau ketik di bawah:",
+      "cta_box_title": "Ketik \"BEL\" di Komentar",
+      "cta_btn_text": "DAPATKAN LINK DM",
+      "footer_tag": "MGT Indonesia • @mgt.indonesia",
+      "swipe_text": "♥ Simpan & Bagikan"
+    }
+  ]
+}
